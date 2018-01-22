@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_rlBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#2C304B"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:background="?attr/selectableItemBackground"
+            android:padding="10dip"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/btn_back" />
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="新增收银员"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_addSave"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:background="?attr/selectableItemBackground"
+            android:padding="10dip"
+            android:text="保存"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="5dp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <!--第一-->
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/title_name"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        android:text="姓名"
+                        android:textColor="#6E6F74"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/add_name"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="#00000000"
+                        android:gravity="center_vertical|right"
+                        android:paddingRight="20dp"
+                        android:hint="请输入收银员姓名"
+
+                        android:textSize="18dp" />
+
+                    <!--android:textColor="#C2C2C6"-->
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/lab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#EEF1F7"
+                    android:layout_marginLeft="20dp" />
+
+
+            </LinearLayout>
+
+            <!--第二-->
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/title_phone"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        android:text="电话"
+                        android:textColor="#6E6F74"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/add_phone"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="#00000000"
+                        android:gravity="center_vertical|right"
+                        android:inputType="phone"
+                        android:paddingRight="20dp"
+                        android:hint="请输入收银员电话"
+                        android:textColor="#37383C"
+                        android:textSize="18sp" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/lab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#EEF1F7"
+                    android:layout_marginLeft="20dp" />
+
+
+            </LinearLayout>
+
+            <!--第三-->
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/title_mainnumber"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        android:text="状态"
+                        android:textColor="#6E6F74"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/add_type"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:paddingRight="20dp"
+                        android:hint="1有效，0无效"
+                        android:background="#00000000"
+                        android:textColor="#37383C"
+                        android:textSize="18sp" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/lab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#EEF1F7"
+                    android:layout_marginLeft="20dp" />
+
+
+            </LinearLayout>
+
+            <!--第四-->
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/title_number"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        android:text="收银员编号"
+                        android:textColor="#6E6F74"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/add_number"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:paddingRight="20dp"
+                        android:hint="0001"
+                        android:background="#00000000"
+                        android:textColor="#37383C"
+                        android:textSize="18sp" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/lab4"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#EEF1F7"
+                    android:layout_marginLeft="20dp" />
+
+
+            </LinearLayout>
+
+            <!--第五-->
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/title_password"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        android:text="设置密码"
+                        android:textColor="#6E6F74"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/add_password"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:paddingRight="20dp"
+                        android:inputType="numberPassword"
+                        android:background="#00000000"
+                        android:hint="请输入密码"
+                        android:textColor="#37383C"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/passwordeye"
+                        />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/lab5"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#EEF1F7"
+                    android:layout_marginLeft="20dp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

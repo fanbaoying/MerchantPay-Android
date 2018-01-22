@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="demopay.gusheng.merchantpay_android">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+    <!-- 打印机权限 -->
+    <uses-permission android:name="android.permission.CLOUDPOS_PRINTER" />
+
+    <!--银行卡收款权限-->
+    <uses-permission android:name="com.wizarpos.paymentrouter.permission.WIZARPOS_PAY"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activity.PayMoneyActivity"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden"/>
+
+        <!--隐藏键盘-->
+        <!--android:windowSoftInputMode="stateHidden|stateAlwaysHidden"-->
+        <!--显示键盘-->
+        <!--android:windowSoftInputMode="stateAlwaysVisible"-->
+
+        <activity
+            android:name=".zxing.sweepactivity.CaptureActivity"/>
+        <activity
+            android:name=".activity.SweepActivity"/>
+
+        <activity android:name=".activity.ForgetpsdActivity"/>
+
+        <activity android:name=".activity.RegisterActivity"/>
+
+        <activity android:name=".activity.ChargepsdActivity"/>
+
+        <activity android:name=".activity.LookActivity"/>
+
+        <activity android:name=".activity.OrderDetailActicity"/>
+
+        <activity android:name=".activity.cashier.CashierActivity"/>
+
+        <activity android:name=".activity.cashier.CashierDataActivity"/>
+
+        <activity android:name=".activity.cashier.EditCashierActivity"/>
+
+        <activity android:name=".activity.cashier.AddCashierActivity"/>
+
+
+        <!--店铺收款码页面-->
+        <activity android:name=".activity.shop.ShopCollectionActivity"/>
+
+        <!--银行卡收款页面-->
+        <activity android:name=".activity.BankCardActivity"/>
+        <activity android:name=".activity.BankLoginActivity"/>
+
+        <activity android:name=".activity.PayOrderActivity"/>
+
+        <!--主页菜单详情页-->
+        <activity android:name=".activity.MainMenuActivity"/>
+
+    </application>
+
+
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 网络权限 -->
+    <uses-permission android:name="android.permission.VIBRATE" /> <!-- 震动权限 -->
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- 摄像头权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-feature android:name="android.hardware.camera.autofocus" /> <!-- 自动聚焦权限 -->
+
+    <!--H5页面加载-->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!--保存图片到相册-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+</manifest>

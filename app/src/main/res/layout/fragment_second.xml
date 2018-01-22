@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/rl_rlBar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:background="#333333"-->
+        <!--android:gravity="center_vertical">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_title"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:text="我的"-->
+            <!--android:textSize="20dp" />-->
+
+    <!--</RelativeLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/bgimg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/headimg"/>
+        <TextView
+            android:id="@+id/merchantName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginBottom="0dp"
+            android:text="FBY展菲"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/merchantCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="账号：183****5881"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/firstlist"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"></ListView>
+
+
+</LinearLayout>

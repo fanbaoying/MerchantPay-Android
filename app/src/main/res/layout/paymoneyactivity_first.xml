@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/black"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_rlBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#000000"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/backImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:layout_alignParentRight="true"
+            android:onClick="imageButton"
+            android:src="@drawable/close"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/white"
+            android:layout_margin="20dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textview1"
+                android:layout_width="wrap_content"
+                android:background="@color/white"
+                android:text="¥"
+                android:textSize="40dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:layout_height="60dp" />
+
+            <EditText
+                android:id="@+id/moneyEditText"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:textSize="30dp"
+                android:inputType="numberDecimal"
+                android:layout_height="60dp"
+                />
+
+            <!--android:focusableInTouchMode"=true-->
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!--<Button-->
+                <!--android:id="@+id/alipaybutton"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:text="支付宝收款"-->
+                <!--android:background="@drawable/tv_alipay_bg"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:textSize="18dp"-->
+                <!--android:onClick="alipay"-->
+                <!--android:layout_marginRight="20dp"/>-->
+
+            <Button
+                android:id="@+id/wechatbutton"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="微信收款"
+                android:textSize="18dp"
+                android:onClick="wechat"
+                android:background="@drawable/tv_wechat_bg"
+                android:textColor="@color/white"
+                android:layout_margin="20dp"/>
+
+            <Button
+                android:id="@+id/bankcardbutton"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="银行卡收款"
+                android:textSize="18dp"
+                android:onClick="wechat"
+                android:background="@drawable/tv_bankcard_bg"
+                android:textColor="@color/white"
+                android:layout_margin="20dp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

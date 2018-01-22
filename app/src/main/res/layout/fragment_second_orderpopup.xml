@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="1dp">
+    <Button
+        android:id="@+id/paybutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:textColor="#596368"
+        android:textSize="18dp"
+        android:text="已支付" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#b5bcc0"/>
+
+
+    <Button
+        android:id="@+id/refundbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:textColor="#596368"
+        android:textSize="18dp"
+        android:text="已退款" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#b5bcc0"/>
+
+    <Button
+        android:id="@+id/allPaybutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:textColor="#596368"
+        android:textSize="18dp"
+        android:text="全部" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#b5bcc0"/>
+</LinearLayout>

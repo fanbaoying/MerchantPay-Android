@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_apo_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#333333"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="支付列表"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tv_apo_sure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:text="确定"
+            android:textColor="@color/white"
+
+            android:onClick="okButtonClick"
+
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_apo_state"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/rl_apo_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/fail" />
+
+    <TextView
+        android:id="@+id/tv_apo_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_apo_state"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:text="支付失败,请重新支付"
+        android:textColor="#576369"
+        android:textSize="25dp" />
+    <ImageView
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/lookPay"
+        android:layout_below="@+id/tv_apo_state"
+        android:id="@+id/iv_apo_driver"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp" />
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/tv_apo_info"
+        android:layout_below="@+id/iv_apo_driver"
+        android:text="订单信息"
+        android:textColor="#576369"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/tv_apo_infoDetail"
+        android:layout_below="@+id/tv_apo_info"
+        android:text="@string/pay_info"
+        android:textColor="#576369"
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/tv_apo_infoDetail"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/bt_apo_look"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="5dp"
+            android:textSize="25dp"
+            android:text="查看订单"
+            android:textColor="#ADB6BA"
+            android:background="@drawable/bt_lookpay_bg"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/bt_apo_restart"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="20dp"
+            android:textSize="25dp"
+            android:text="重新支付"
+            android:background="@drawable/bt_repay_bg"
+            android:textColor="#E3746F"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>

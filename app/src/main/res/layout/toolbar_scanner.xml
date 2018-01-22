@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="?attr/colorPrimary"
+    app:contentInsetStart="0dip">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2C304B"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:background="?attr/selectableItemBackground"
+            android:padding="10dip"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/btn_back" />
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="扫描二维码"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_flash"
+            android:layout_width="40dip"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:background="?attr/selectableItemBackground"
+            android:text="灯光"
+            android:textColor="@android:color/white" />
+
+        <!--<ImageButton-->
+            <!--android:id="@+id/btn_flash2"-->
+            <!--android:layout_width="40dip"-->
+            <!--android:layout_height="40dip"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:background="?attr/selectableItemBackground"-->
+            <!--android:padding="10dip"-->
+            <!--android:scaleType="centerCrop"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:src="@drawable/btn_back" />-->
+
+        <!--<ImageButton-->
+            <!--android:id="@+id/btn_flash1"-->
+            <!--android:layout_width="40dip"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginRight="10dip"-->
+            <!--android:padding="6dip"-->
+            <!--android:background="?attr/selectableItemBackground"-->
+            <!--android:scaleType="centerInside"-->
+            <!--android:src="@drawable/flash_off" />-->
+
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>

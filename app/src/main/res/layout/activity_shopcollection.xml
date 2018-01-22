@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_rlBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#2C304B"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:background="?attr/selectableItemBackground"
+            android:padding="10dip"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/btn_back" />
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="店铺收款码"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="#F7F7F7"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/ShopQrCodes"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="40dp"
+            android:background="@color/white"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="*保存后可自行打印"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#5C5C5D"
+            android:layout_gravity="center_horizontal"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#F7F7F7"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/save_btn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="@color/white"
+            android:background="#EF8733"
+            android:text="保存到相册" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

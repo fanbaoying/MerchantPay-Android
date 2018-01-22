@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">赞同收银</string>
+    <string name="pay_info">该订单为您保留24小时（从下单日算起），24小时以后如果还未付款，系统将自动取消该订单。</string>
+    <string name="pay_info_detail">您已成功支付该订单</string>
+</resources>

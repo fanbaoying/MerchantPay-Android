@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_rlBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#2C304B"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:background="?attr/selectableItemBackground"
+            android:padding="10dip"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/btn_back" />
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="银行卡收款"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <!--<ImageButton-->
+            <!--android:id="@+id/btn_add"-->
+            <!--android:layout_width="40dip"-->
+            <!--android:layout_height="40dip"-->
+            <!--android:background="?attr/selectableItemBackground"-->
+            <!--android:padding="10dip"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:scaleType="centerCrop"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:src="@drawable/addnav" />-->
+
+    </RelativeLayout>
+
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/bankcard_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="消费"
+            android:textColor="#000000"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/bankcard_content"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="金额：RMB0.01"
+            android:textColor="#6E6F74"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/bankcard_reminder"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:text="请使用您的银行卡"
+            android:textColor="#6E6F74"
+            android:textSize="20sp" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/bankcard_bind"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="连接服务"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/bankcard_unbind"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="断开服务"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/bankcard_login"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="签到"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/bankcard_sale"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="消费"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <!--<Button-->
+            <!--android:id="@+id/bankcard_voidsale"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:gravity="center"-->
+            <!--android:text="撤销"-->
+            <!--android:textColor="#000000"-->
+            <!--android:textSize="20sp" />-->
+
+        <Button
+            android:id="@+id/bankcard_findlogin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="查询签到"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

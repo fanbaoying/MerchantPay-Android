@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#EEF1F7"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:layout_margin="10dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="2"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical" >
+
+
+            <TextView
+                android:id="@+id/nameTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:textSize="16dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/phoneTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:textSize="16dp"
+                android:gravity="center_vertical"
+                android:textColor="#6E6F74"/>
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:layout_margin="10dp"
+            android:orientation="vertical" >
+
+            <!--<ToggleButton-->
+                <!--android:id="@+id/tglSound"-->
+                <!--android:background="@drawable/selector_butn_toggle"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="right"-->
+                <!--android:checked="true"-->
+                <!--android:textOn=""-->
+                <!--android:textOff=""-->
+                <!--android:text="" />-->
+
+            <demopay.gusheng.merchantpay_android.util.Switch
+                android:id="@+id/switchid"
+                android:layout_width="60dp"
+                android:layout_height="30dip"
+                android:layout_gravity="right"
+                android:layout_centerVertical="true" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

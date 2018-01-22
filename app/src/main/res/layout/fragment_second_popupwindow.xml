@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="1dp">
+
+        <Button
+        android:id="@+id/wxbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:textColor="#596368"
+        android:textSize="18dp"
+        android:text="微信" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#b5bcc0"/>
+
+
+        <Button
+        android:id="@+id/alipaybutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:textColor="#596368"
+        android:textSize="18dp"
+        android:text="支付宝" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#b5bcc0"/>
+
+        <Button
+        android:id="@+id/uppaybutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:textColor="#596368"
+        android:textSize="18dp"
+        android:text="银联" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#b5bcc0"/>
+        <Button
+        android:id="@+id/allbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:textColor="#596368"
+        android:textSize="18dp"
+        android:text="全部" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#b5bcc0"/>
+
+
+
+</LinearLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_rlBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#2C304B"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:background="?attr/selectableItemBackground"
+            android:padding="10dip"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/btn_back" />
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="修改密码"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical" >
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/phonetext"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="15dp"
+                android:layout_gravity="center_vertical"
+                android:inputType="number"
+                android:hint="请输入短信验证码"
+                android:background="@null"/>
+
+            <Button
+                android:id="@+id/timebutton"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:textSize="16dp"
+                android:background="@drawable/tv_timemessage_bg"
+                android:text="57秒"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="15dp"
+            android:background="#b5bcc0"/>
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="新密码"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="15dp"/>
+
+            <EditText
+                android:id="@+id/newpassword"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:inputType="textPassword"
+                android:hint="请设置登录密码"
+                android:background="@null"/>
+
+            <CheckBox
+                android:id="@+id/CheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginRight="15dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:text="显示"
+                android:button="@null"
+                android:background="@drawable/tv_timemessage_bg"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/okpasswordbutton"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="确定"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="40dp"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:onClick="phoneNextbutton"
+                android:background="#2C304B"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

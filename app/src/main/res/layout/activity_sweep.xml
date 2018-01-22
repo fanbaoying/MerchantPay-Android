@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_rlBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#2C304B"
+        android:gravity="center_vertical">
+
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:background="?attr/selectableItemBackground"
+            android:padding="10dip"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/btn_back" />
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="生成二维码"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="#F7F7F7"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/QrCode"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F7F7F7"
+        android:layout_gravity="bottom|center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/merchant_sweep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="¥ 2"
+            android:textSize="38dp"
+            android:textColor="#EC5A2B"
+            android:gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="请使用微信扫一扫付款"
+            android:textSize="20dp"
+            android:textColor="#5C5C5D"
+            android:gravity="center_horizontal"/>
+
+        <Button
+            android:id="@+id/changebutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:text="切换收款方式"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:background="@drawable/tv_sweep_bg"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
