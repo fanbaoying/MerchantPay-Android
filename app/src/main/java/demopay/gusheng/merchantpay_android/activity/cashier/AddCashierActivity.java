@@ -1,5 +1,6 @@
 package demopay.gusheng.merchantpay_android.activity.cashier;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -49,6 +50,7 @@ public class AddCashierActivity extends Activity {
 
     private static final String fileName = "logintext";//定义保存的文件的名称
 
+    @SuppressLint("HandlerLeak")
     private Handler mHandler = new Handler() {
 
         public void handleMessage(Message msg) {

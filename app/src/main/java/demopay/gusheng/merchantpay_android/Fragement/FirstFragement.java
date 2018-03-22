@@ -1,5 +1,6 @@
 package demopay.gusheng.merchantpay_android.Fragement;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -61,6 +62,7 @@ public class FirstFragement extends Fragment {
 
     private static final String fileName = "logintext";//定义保存的文件的名称
 
+    @SuppressLint("HandlerLeak")
     private Handler mHandler = new Handler() {
 
         public void handleMessage(Message msg) {

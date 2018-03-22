@@ -1,5 +1,6 @@
 package demopay.gusheng.merchantpay_android.activity;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -57,6 +58,7 @@ public class OrderDetailActicity extends Activity {
     private static final String fileName = "logintext";//定义保存的文件的名称
 
 
+    @SuppressLint("HandlerLeak")
     private Handler mHandler = new Handler() {
 
         public void handleMessage(Message msg) {

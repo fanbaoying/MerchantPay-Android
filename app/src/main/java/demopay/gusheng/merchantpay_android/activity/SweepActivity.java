@@ -1,5 +1,6 @@
 package demopay.gusheng.merchantpay_android.activity;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -21,6 +22,7 @@ import android.widget.Toast;
 import com.google.gson.Gson;
 import com.google.zxing.WriterException;
 import com.unionpay.cloudpos.DeviceException;
+import com.unionpay.cloudpos.POSTerminal;
 import com.unionpay.cloudpos.printer.Format;
 import com.unionpay.cloudpos.printer.PrinterDevice;
 
@@ -73,6 +75,7 @@ public class SweepActivity extends AppCompatActivity {
 
     private String payChannelStr;
 
+    @SuppressLint("HandlerLeak")
     private Handler mHandler = new Handler() {
 
         public void handleMessage(Message msg) {
@@ -129,7 +132,7 @@ public class SweepActivity extends AppCompatActivity {
                     String orderAmountStr = String.valueOf(amount);
 
 //                    开启打印机
-//                    starPrint(merchantName, merchantNoStr, payChannelStr, completeTime, orderAmountStr);
+                    starPrint(merchantName, merchantNoStr, payChannelStr, completeTime, orderAmountStr);
 
 
                     Intent mIntent = new Intent(SweepActivity.this, PayOrderActivity.class);
@@ -156,6 +159,10 @@ public class SweepActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sweep);
+
+        //        打印机
+        printerDevice = (PrinterDevice) POSTerminal.getInstance(getApplicationContext()).getDevice(
+                "cloudpos.device.printer");
 
         SharedPreferences share = super.getSharedPreferences(fileName,
                     MODE_PRIVATE);
@@ -380,7 +387,7 @@ public class SweepActivity extends AppCompatActivity {
 
             printerDevice.open();
 
-//            ToastUtil.showShort(PayMoneyActivity.this, "打印机设备打开成功");
+            ToastUtil.showShort(SweepActivity.this, "打印机设备打开成功");
 
             format = new Format();
             try {

@@ -15,29 +15,29 @@ android:background="#dddddd">
             android:orientation="vertical" >
 
             <LinearLayout android:layout_width="match_parent"
-                android:layout_height="240px"
+                android:layout_height="100px"
                 android:background="#2C304B"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="10dp"
                 android:orientation="horizontal" >
 
                 <ImageView
                     android:id="@+id/image1"
                     android:layout_width="0dp"
-                    android:padding="10dp"
+                    android:padding="5dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:src="@drawable/sweep1"/>
                 <ImageView
                     android:id="@+id/image2"
                     android:layout_width="0dp"
-                    android:padding="10dp"
+                    android:padding="5dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:src="@drawable/look3"/>
                 <ImageView
                     android:id="@+id/image3"
                     android:layout_width="0dp"
-                    android:padding="10dp"
+                    android:padding="5dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:src="@drawable/order1"/>

@@ -37,7 +37,7 @@ public class OrderRequest {
     public static String getDetailJson(String trxNo, String token) throws IOException {
 
         String orderDetail_URL = ORDERDETAIL_URL+trxNo;
-        Log.i("charge codeurl", orderDetail_URL);
+        Log.i("charge codeurl find", orderDetail_URL);
 
         okhttp3.Request request = new okhttp3.Request.Builder().url(orderDetail_URL).get().header("token", token).build();
 

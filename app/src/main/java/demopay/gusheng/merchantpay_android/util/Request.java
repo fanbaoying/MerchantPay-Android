@@ -61,7 +61,8 @@ public class Request {
 
         payBean.setMerchantOrderNo(orderNo);
 
-        payBean.setProductName("支付测试-" + orderNo);
+//        支付测试
+        payBean.setProductName("payTest-" + orderNo);
         payBean.setAmount(String.valueOf(amount));
         payBean.setReturnUrl("");
         payBean.setNotifyUrl("");

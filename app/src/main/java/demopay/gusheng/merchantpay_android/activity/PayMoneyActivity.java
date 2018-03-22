@@ -1,6 +1,7 @@
 package demopay.gusheng.merchantpay_android.activity;
 
 import android.Manifest;
+import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.content.ComponentName;
 import android.content.Context;
@@ -116,6 +117,7 @@ public class PayMoneyActivity extends AppCompatActivity implements View.OnClickL
 //    银行卡收款
 //    private IWizarPayment wizarPayment = null;
 
+    @SuppressLint("HandlerLeak")
     private Handler mHandler = new Handler() {
 
         public void handleMessage(Message msg) {
@@ -172,7 +174,7 @@ public class PayMoneyActivity extends AppCompatActivity implements View.OnClickL
                     String orderAmountStr = String.valueOf(amount);
 
 //                    开启打印机
-//                    starPrint(merchantName, merchantNo, payChannelStr, orderTime, orderAmountStr);
+                    starPrint(merchantName, merchantNo, payChannelStr, orderTime, orderAmountStr);
 
                     Intent mIntent = new Intent(PayMoneyActivity.this, PayOrderActivity.class);
                     mIntent.putExtra("flag", true);
@@ -200,8 +202,8 @@ public class PayMoneyActivity extends AppCompatActivity implements View.OnClickL
         setContentView(R.layout.paymoneyactivity_first);
 
 //        打印机
-//        printerDevice = (PrinterDevice) POSTerminal.getInstance(getApplicationContext()).getDevice(
-//                "cloudpos.device.printer");
+        printerDevice = (PrinterDevice) POSTerminal.getInstance(getApplicationContext()).getDevice(
+                "cloudpos.device.printer");
 
         SharedPreferences share = super.getSharedPreferences(fileName,
                 MODE_PRIVATE);
@@ -527,8 +529,9 @@ public class PayMoneyActivity extends AppCompatActivity implements View.OnClickL
                     String orderAmountStr = String.valueOf(amount);
 
 //                    开启打印机
-//                    starPrint(merchantName, merchantNo, payChannelStr, orderTime, orderAmountStr);
+                    starPrint(merchantName, merchantNo, payChannelStr, orderTime, orderAmountStr);
 
+                    Log.i("charge data","开启打印机");
 //                    关闭打印机
 
 //                    stopPrint();
@@ -560,7 +563,7 @@ public class PayMoneyActivity extends AppCompatActivity implements View.OnClickL
 
             printerDevice.open();
 
-//            ToastUtil.showShort(PayMoneyActivity.this, "打印机设备打开成功");
+            ToastUtil.showShort(PayMoneyActivity.this, "打印机设备打开成功");
 
             format = new Format();
             try {

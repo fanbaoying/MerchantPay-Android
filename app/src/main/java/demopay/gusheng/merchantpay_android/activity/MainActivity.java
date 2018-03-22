@@ -345,7 +345,12 @@ public class MainActivity extends AppCompatActivity {
         try
         {
             //绑定支付服务
-            bindService(new Intent(IWizarPayment.class.getName()), serviceConnection, Context.BIND_AUTO_CREATE);
+//            bindService(new Intent(IWizarPayment.class.getName()), serviceConnection, Context.BIND_AUTO_CREATE);
+
+            Intent intent = new Intent(IWizarPayment.class.getName());
+            intent.setPackage("com.wizarpos.paymentrouter");
+            bindService(intent, serviceConnection, Context.BIND_AUTO_CREATE);
+
         }
         catch (Exception e)
         {
